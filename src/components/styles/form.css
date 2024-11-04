@@ -1,0 +1,334 @@
+/* Container styling */
+form {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f7f8f9;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.field {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+
+/* Placeholder text styling */
+.field::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/* Dropdown styling */
+select.field {
+    padding: 10px;
+    background-color: #fff;
+}
+
+/* Time input styling */
+.field[type="time"] {
+    padding: 10px;
+}
+
+/* Adding spacing between fields */
+div+div {
+    margin-top: 25px;
+}
+/* Error Border for fields*/
+.error-border{
+    border: 1px solid red;
+}
+/* Error message styling */
+.error-message {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Parent element of the button */
+.parent-element {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* Add this to set the width of the parent element */
+}
+
+/* Submit button styling */
+button[type="submit"] {
+    background-color: #3e8e41;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+/* Additional spacing for Work Schedule section */
+.work-schedule {
+    margin-bottom: 25px;
+}
+
+.time-fields label {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.time-fields {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.time-fields .field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.date-picker-class .field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.date-picker-class .field:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.react-datepicker-wrapper {
+    width: 100%;
+}
+
+.react-datepicker .react-datepicker__header {
+    background-color: #3e8e41;
+    color: white;
+}
+
+.react-datepicker .react-datepicker__day-name {
+    color: white;
+}
+
+h2.react-datepicker__current-month {
+    color: white;
+}
+
+.react-datepicker__day--selected {
+    background-color: #3e8e41 !important;
+    color: white !important;
+}
+
+.react-datepicker .react-datepicker__day--keyboard-selected {
+    background-color: #3e8e41;
+    color: white;
+}
+
+
+.custom-dropdown {
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-selected {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.dropdown-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #fff;
+    z-index: 99;
+}
+
+.dropdown-option {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.dropdown-option:hover {
+    background-color: #f0f0f0;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+.ClockComponent {
+    width: 100%;
+    /* make the clock component take up the full width of the label */
+    height: 200px;
+    /* adjust the height to fit your needs */
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    /* make the clock component display inline-block */
+}
+
+.clock-container {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    vertical-align: middle;
+    /* add this line */
+}
+
+/* Clock styling */
+.clock {
+    width: 200px;
+    /* Adjust as needed */
+    height: 200px;
+    /* Adjust as needed */
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    /* To position hands and numbers */
+}
+
+.clock-face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Numbers styling */
+.numbers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.numbers span {
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    transform-origin: 50% 100%;
+    /* Center the rotation */
+}
+
+/* Position each number */
+.numbers span:nth-child(1) {
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(30deg);
+}
+
+/* ... repeat for all numbers */
+
+.numbers span:nth-child(12) {
+    top: -10%;
+    left: 10%;
+    transform: translate(-50%, -50%) rotate(360deg);
+}
+
+/* Hand styling */
+.hour-hand,
+.minute-hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+    /* Center the rotation */
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.hour-hand {
+    width: 5px;
+    height: 50px;
+}
+
+.minute-hand {
+    width: 3px;
+    height: 70px;
+}
+
+/* Clock container styling (for layout) */
+.clock-container {
+    display: inline-block;
+    margin: 20px;
+    /* Adjust for spacing */
+}
+
+.Toastify__toast {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    justify-content: space-between;
+    font-family: sans-serif;
+    color: #3e8e41 !important;
+    z-index: 0;
+    overflow: hidden;
+    /* background-color: #3e8e41; */
+}
+
+:root {
+    --toastify-color-success: #3e8e41 !important;
+    --toastify-toast-width: 500px;
+    --toastify-toast-offset: 100px !important;
+    --toastify-toast-background: white;
+    --toastify-toast-min-height: 80px;
+    --toastify-toast-max-height: 800px;
+    --toastify-toast-bd-radius: 10px;
+    --toastify-font-family: sans-serif;
+    --toastify-text-color-light: #3e8e41 !important;
+    --toastify-spinner-color-empty-area: #e0e0e0;
+    --toastify-color-progress-light: linear-gradient(to right, #3e8e41);
+    --toastify-color-progress-bgo: 0.2;
+}
+
+.Toastify__toast div+div {
+    margin: 0;
+}
