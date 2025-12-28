@@ -253,10 +253,16 @@ const PdfGenerator = () => {
                     <Text style={styles.subText}>Key Points to be Noted</Text>
                     <View style={{ padding: 10 }} />
                     <Text style={styles.text}>
-                        <Text style={styles.titleText}>Place/Transfer:</Text> Your present place of work will be Remote. But during the course of the service, you shall be liable to be posted / transferred anywhere to serve any of the Company's Projects or any other establishment in India or outside, at the sole discretion of the Management.
+                        <Text style={styles.titleText}>Place of Work / Remote Model:</Text> Your present place of work will be Remote. But during the course of the service, you shall be liable to be posted / transferred anywhere to serve any of the Company's Projects or any other establishment in India or outside, at the sole discretion of the Management.
                     </Text>
                     <View style={{ padding: 5 }} />
                     <Text style={styles.text}><Text style={styles.titleText}>Probation/Confirmation:</Text> During the probationary period and any extension thereof, your services may be terminated without giving any notice or salary in line thereof. However, on confirmation, the services can be terminated from either side by giving one month's (30 days) notice or salary in lieu thereof.</Text>
+                    <View style={{ padding: 5 }} />
+                    <Text style={styles.text}><Text style={styles.titleText}>Work Requirements:</Text> Employee must maintain stable internet, electricity, & secure workspace.</Text>
+                    <View style={{ padding: 5 }} />
+                    <Text style={styles.text}><Text style={styles.titleText}>Comapany Asset Notice:</Text>  Company-issued laptop & assets remain CTS property and must be returned in good working condition within 48 hours after exit.</Text>
+                    <View style={{ padding: 5 }} />
+                    <Text style={styles.text}><Text style={styles.titleText}>Monitoring & Compliance – Monitask Policy::</Text> Use of Monitask App is mandatory for time tracking, screenshot monitoring, compliance, and productivity validation. Tampering/disabling monitoring tools equals policy violation & can cause termination.</Text>
                     <View style={{ padding: 5 }} />
                     <Text style={styles.text}><Text style={styles.titleText}>Leave: </Text>You are entitled to paid annual leave, equal to 18 days per annum, taken at a time approved by Compose Tech Services (CTS).</Text>
                     <View style={{ padding: 5 }} />
